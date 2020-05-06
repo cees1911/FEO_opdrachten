@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess the number (w1d306)</title>
+    </head>
+    <body>
+        <script>
+
+            const checkInvoerGetal = function(testGetal) {           
+                if (testGetal >= 0 && testGetal <=25) {
+                return(testGetal);
+                    } else {
+                        alert('getal moet tussen de 0 en 25 zitten');                            
+                    }
+            }
+
+            const hetSpel = function(testGetal, randomGetal){
+                if (testGetal === randomGetal){
+                    alert('Winnaar');
+                } else {
+                    alert ('Loser!!');
+                }
+            }
+
+            alert("Welkom! Bij Guess the number!");
+            let naam = prompt('Wat is je naam?');
+            alert(naam + " Lets play a game!!!");
+            let invoerGetal = prompt( "Voer een nummer in van 0 tot 25 om te beginnen met raden..." );
+            let testGetal = (parseInt(invoerGetal));
+            
+            checkInvoerGetal(testGetal);
+            let randomGetal = Math.floor(Math.random() * 26); 
+            hetSpel(testGetal, randomGetal);               
+        </script>
+    </body>
+</html>
