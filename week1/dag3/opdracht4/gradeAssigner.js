@@ -12,6 +12,6 @@ const assignGrade = function (score) {
     }
 }
 
-for (var i = 60; i <= 100; i++) {
+for (let i = 60; i <= 100; i++) {
     console.log('For ' + i + ', you got a ' + assignGrade(i));
 }
