@@ -1,0 +1,52 @@
+#bodyBgc{
+    background-color: lightgrey;
+}
+
+.toggleKnop{
+    display: flex;
+    background-image: url(menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+}
+
+.toggleKnop:hover{
+    opacity: 0.5;
+}
+
+.dropmenu{
+    position: fixed;
+    left: 0;
+    width: 50px; 
+    transition: all 0.4s ease-in-out;   
+}
+
+.dropmenu ul{
+    line-height: 40px;
+    list-style: none; 
+    overflow: hidden;     
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropmenu ul li{
+    list-style: none;
+    transition: all 0.4s ease-in-out;
+
+}
+.dropmenu ul li a{
+    display: block;
+    text-decoration:none;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+#kleurnaam{
+    text-align:center;
+    margin-top: 350px;
+    text-transform: uppercase;
+}
