@@ -1,0 +1,25 @@
+body{
+    background-color: #1c1b1b;
+    color: #e3dede;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 750px);
+    grid-gap: 5px;
+    list-style-type: none
+}
+img{
+    width: 100%;
+    height: 100%;
+}
